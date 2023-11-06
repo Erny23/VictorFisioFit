@@ -44,7 +44,7 @@ header section #navbar-head .container a i {
     font-size: xx-large;
 }
 
-header section nav .container #basic-navbar-nav {
+/*header section nav .container #basic-navbar-nav {
     justify-content: space-around;
 }
 
@@ -61,7 +61,7 @@ header section nav .container #basic-navbar-nav a:hover {
     -o-transition: 0.9s;
     color: black;
     text-shadow: 1px 1px 12px darkgrey, -1px -1px 12px darkgrey;
-}
+}*/
 
 /*Ini MainIni*/
 #mainIni {
@@ -559,5 +559,11 @@ footer .d-flex #suscripcion:hover {
 @media (min-width: 576px) {
     #carruselTra {
         width: 900px;
+    }
+}
+
+@media (max-width: 430px) {
+    header section nav .offcanvas.offcanvas-start.show {
+        width: 100%;
     }
 }
