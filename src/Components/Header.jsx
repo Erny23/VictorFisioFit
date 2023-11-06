@@ -10,7 +10,7 @@ const Header = () => {
                 <nav className="navbar fixed-top" data-bs-theme="dark" id="navbar-head" style={{backgroundColor:'rgb(187, 32, 37)', height: '74px'}}>
                     <div className="container">
                         <Link to={'/VictorFisioFit'} className="navbar-brand" id="logo">VictorFisioFit</Link>
-                        <Link to={'/VictorFisioFit/Sesion'} href="#" style={{display:'flex', color:'white', alignItems: 'center'}}>
+                        <Link to={'/VictorFisioFit/Sesion'} href="#" style={{display:'flex', color:'white', alignItems: 'center', textDecoration: 'none'}}>
                             <i className='bx bxs-user' style={{color:'white'}}/>
                             <h6 style={{margin:0}}><strong>SigIn/LogIn</strong></h6>
                         </Link>
@@ -20,11 +20,11 @@ const Header = () => {
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                         <Navbar.Collapse id="basic-navbar-nav">
-                            <Link to={'/VictorFisioFit'}>Inicio</Link>
-                            <Link to={'/VictorFisioFit/Training'}>Training</Link>
-                            <Link to={'/VictorFisioFit/Productos'}>Productos</Link>
-                            <Link to={'/VictorFisioFit/Nosotros'}>Nosotros</Link>
-                            <Link to={'/VictorFisioFit/Contactos'}>Contactos</Link>
+                            <Link to={'/VictorFisioFit'} style={{textDecoration: 'none'}}>Inicio</Link>
+                            <Link to={'/VictorFisioFit/Training'} style={{textDecoration: 'none'}}>Training</Link>
+                            <Link to={'/VictorFisioFit/Productos'} style={{textDecoration: 'none'}}>Productos</Link>
+                            <Link to={'/VictorFisioFit/Nosotros'} style={{textDecoration: 'none'}}>Nosotros</Link>
+                            <Link to={'/VictorFisioFit/Contactos'} style={{textDecoration: 'none'}}>Contactos</Link>
                         </Navbar.Collapse>
                     </Container>
                 </Navbar>
