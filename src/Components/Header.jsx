@@ -9,7 +9,7 @@ const Header = () => {
             <section>
                 <nav className="navbar fixed-top" data-bs-theme="dark" id="navbar-head" style={{backgroundColor:'rgb(187, 32, 37)', height: '74px'}}>
                     <div className="container">
-                        <Link to={'/VictorFisioFit'} className="navbar-brand" id="logo">VictorFisioFit</Link>
+                        <Link to={'/VictorFisioFit'} className="navbar-brand" style={{fontFamily: 'stencilla'}} id="logo">VictorFisioFit</Link>
                         <Link to={'/VictorFisioFit/Sesion'} href="#" style={{display:'flex', color:'white', alignItems: 'center', textDecoration: 'none'}}>
                             <i className='bx bxs-user' style={{color:'white'}}/>
                             <h6 style={{margin:0}}><strong>SigIn/LogIn</strong></h6>

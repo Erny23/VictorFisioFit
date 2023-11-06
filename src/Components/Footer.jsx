@@ -7,7 +7,7 @@ const Footer = () => {
             <section className="mx-3 row row-cols-1 row-cols-sm-2" id="footerSection2">
                 <div className="col my-2">
                     <div>
-                        <Link to='/VictorFisioFit' href='#' id="logoFooter">VictorFisioFit</Link>
+                        <Link to='/VictorFisioFit' href='#' style={{fontFamily: 'stencilla'}} id="logoFooter">VictorFisioFit</Link>
                         <p>Servicio de entrenamiento personalizado</p>
                     </div>
                     <div>
