@@ -1,9 +1,13 @@
-import MainSes from "../Components/MainSes"
+import Login from '../Components/login'
 
-const Sesion = () => {
+function Sesion() {
   return (
     <>
-        <MainSes/>
+      <main id="mainSesion">
+        <section>
+            <Login />
+        </section>
+      </main>
     </>
   )
 }

@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Footer from './Components/Footer'
 import Header from './Components/Header'
+import ProtectedRoutes from './Components/Auth/protectedRoutes'
 import Inicio from './Pages/Inicio'
 import Training from './Pages/Training'
 import Productos from './Pages/Productos'
@@ -23,15 +24,20 @@ function App() {
         <Routes>
           <Route path='*' element={<Error/>} />
           <Route path='/VictorFisioFit' element={<Inicio/>} />
-          <Route path='/VictorFisioFit/Training' element={<Training/>} />
-          <Route path='/VictorFisioFit/Productos' element={<Productos/>} />
+          <Route path='/VictorFisioFit/Sesion' element={<Sesion/>} />
           <Route path='/VictorFisioFit/Nosotros' element={<Nosotros/>} />
           <Route path='/VictorFisioFit/Contactos' element={<Contactos/>} />
-          <Route path='/VictorFisioFit/Sesion' element={<Sesion/>} />
 
-          <Route path='/VictorFisioFit/Training/Leccion1' element={<Leccion1/>} />
-          <Route path='/VictorFisioFit/Training/Leccion2' element={<Leccion2/>} />
-          <Route path='/VictorFisioFit/Training/Leccion3' element={<Leccion3/>} />
+          <Route path='/VictorFisioFit' element={<ProtectedRoutes />}>
+
+            <Route path='/VictorFisioFit/Training' element={<Training/>} />
+            <Route path='/VictorFisioFit/Productos' element={<Productos/>} />
+
+            <Route path='/VictorFisioFit/Training/Leccion1' element={<Leccion1/>} />
+            <Route path='/VictorFisioFit/Training/Leccion2' element={<Leccion2/>} />
+            <Route path='/VictorFisioFit/Training/Leccion3' element={<Leccion3/>} />
+            
+          </Route>
         </Routes>
         <Footer/>
       </BrowserRouter>
